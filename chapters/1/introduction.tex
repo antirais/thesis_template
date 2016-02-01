@@ -1,0 +1,85 @@
+\chapter{Introduction}
+\label{introduction}
+
+Lorem ipsum dolor sit amet, \texttt{consectetur} adipiscing elit. Morbi sed dui a felis posuere porta. Curabitur congue euismod feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempor pharetra ipsum non consequat. Phasellus tempor magna quam. Aliquam nunc diam, rhoncus et libero ultricies, euismod laoreet est. Mauris non pellentesque dui. Nunc elit sem, molestie eu nibh sed, cursus commodo felis. Etiam nec viverra dolor, vitae maximus nisl. Quisque eget orci et erat mollis feugiat. Cras dignissim, tortor finibus euismod euismod, mi diam gravida leo, ut sollicitudin diam dui id quam.~\footnote{\url{http://www.example.com\#Examples}}
+
+\ac{OWASP}
+\acf{OWASP}
+``Text''
+``\texttt{\&}''
+\texttt{"Literal quote: \textbackslash{}"; and single quote \apos "}
+Text~``\texttt{\textasciitilde!*()'-.\_}''
+
+He said something.~\cite{inproceedings}
+He said something.~\cite{techreport}
+He said something.~\cite{book}
+He said something.~\cite{masterthesis}
+He said something.~\cite{article}
+He said something.~\cite{misc}
+He said something.~\cite{online}
+
+URL: \url{https://www.example.com?a=0&b=0}
+Ref~\ref{appendix:a}
+
+\section{Problem statement and contribution of the thesis}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed dui a felis posuere porta. Curabitur congue euismod feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempor pharetra ipsum non consequat. Phasellus tempor magna quam. Aliquam nunc diam, rhoncus et libero ultricies, euismod laoreet est. Mauris non pellentesque dui. Nunc elit sem, molestie eu nibh sed, cursus commodo felis. Etiam nec viverra dolor, vitae maximus nisl. Quisque eget orci et erat mollis feugiat. Cras dignissim, tortor finibus euismod euismod, mi diam gravida leo, ut sollicitudin diam dui id quam.
+
+\begin{quote} % The goal should be as specific as possible
+\emph{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed dui a felis posuere porta. Curabitur congue euismod feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tempor pharetra ipsum non consequat. Phasellus tempor magna quam. Aliquam nunc diam, rhoncus et libero ultricies, euismod laoreet est. Mauris non pellentesque dui. Nunc elit sem, molestie eu nibh sed, cursus commodo felis. Etiam nec viverra dolor, vitae maximus nisl. Quisque eget orci et erat mollis feugiat. Cras dignissim, tortor finibus euismod euismod, mi diam gravida leo, ut sollicitudin diam dui id quam.
+}
+\end{quote}
+
+The expected outcome of this thesis is...
+\begin{itemize}
+    %\setlength\itemsep{0em}
+    \item item a;
+    \item item b;
+    \item item c;
+    \item item d.
+\end{itemize}
+
+\section{Some other section}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu velit eu erat tristique egestas a non leo. Maecenas et enim id lacus molestie ornare. Fusce ante ligula, accumsan sollicitudin sapien et, vulputate ultricies metus. Proin eget elementum turpis. Nulla cursus arcu in ex ultricies semper.
+
+\begin{table}[h]
+\centering
+\footnotesize
+\begin{tabular}{clcc}
+    Entity & name    & decimal & hexadecimal \\
+    \hline
+    <      & \&lt;   & \&\#60; & \&\#x003C;  \\
+    >      & \&gt;   & \&\#62; & \&\#x003E;  \\
+    \&     & \&amp;  & \&\#38; & \&\#x0026;  \\
+    '      & \&apos;
+    ~\tablefootnote{Not supported by \ac{HTML}4 user-agents. Decimal encoding scheme should be used instead. Read \ac{W3C} recommendation: \url{http://www.w3.org/TR/xhtml1/\#C_16}}
+                     & \&\#39; & \&\#x0027;  \\
+    "      & \&quot; & \&\#34; & \&\#x0022;  \\
+    \hline
+\end{tabular}
+\caption{HTML entity encoding}
+\label{table:entity-encoding}
+\end{table}
+
+\section{Outline of the thesis}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu velit eu erat tristique egestas a non leo. Maecenas et enim id lacus molestie ornare. Fusce ante ligula, accumsan sollicitudin sapien et, vulputate ultricies metus. Proin eget elementum turpis. Nulla cursus arcu in ex ultricies semper.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[keepaspectratio, width=0.5\textwidth]{image}
+    \caption{Some image}
+    \label{fig:image}
+\end{figure}
+
+\section{Ethical considerations}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu velit eu erat tristique egestas a non leo. Maecenas et enim id lacus molestie ornare. Fusce ante ligula, accumsan sollicitudin sapien et, vulputate ultricies metus. Proin eget elementum turpis. Nulla cursus arcu in ex ultricies semper.
+
+\begin{lstlisting}[escapechar=|, caption=Example, label={example}]
+Some HTML text
+<h1 class="|\hl{red" onclick="alert(\apos XSS\&lt;\apos )}|">Title.</h1>
+\end{lstlisting}
+
+\section{Acknowledgments}
+\label{acknowledgments}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu velit eu erat tristique egestas a non leo. Maecenas et enim id lacus molestie ornare. Fusce ante ligula, accumsan sollicitudin sapien et, vulputate ultricies metus. Proin eget elementum turpis. Nulla cursus arcu in ex ultricies semper.
+

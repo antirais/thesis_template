@@ -1,0 +1,7 @@
+# Git ignore
+
+build/
+*.swp
+*.log
+*.sublime-project
+*.sublime-workspace

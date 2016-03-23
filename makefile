@@ -17,14 +17,14 @@ FILE = thesis
 BUILD_DIR = build
 
 all: $(FILE).tex
-    @latexmk -pdf -bibtex $(FILE) -jobname=$(BUILD_DIR)/$(FILE)
+	@latexmk -pdf -bibtex $(FILE) -jobname=$(BUILD_DIR)/$(FILE)
 
 view:
-    @evince $(BUILD_DIR)/$(FILE).pdf &
+	@evince $(BUILD_DIR)/$(FILE).pdf &
 
 clean:
-    @rm $(BUILD_DIR)/*
+	@rm $(BUILD_DIR)/*
 
 info:
-    @pdfinfo $(BUILD_DIR)/$(FILE).pdf
+	@pdfinfo $(BUILD_DIR)/$(FILE).pdf
 

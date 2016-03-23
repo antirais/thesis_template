@@ -5,15 +5,9 @@ Generic LaTeX template for those who want to use version control and text based 
 ## Setup
 Setup was tested on Ubuntu/Debian system. Others packages might be necessary depending on your preferences.
 ```sh
-$ sudo apt-get install texlive latexmk texlive-lang-european
+$ sudo apt-get install texlive texlive-latex-extra latexmk texlive-lang-european
 ```
-If you get a following error:
 
-    ! LaTeX Error: File `acronym.sty' not found.
-then try to install missing dependencies:
-```sh
-$ sudo apt-get install texlive-latex-extra
-```
 ## Build the document
 To build the PDF document, you can use the following:
 - command line tools

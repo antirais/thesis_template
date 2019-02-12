@@ -18,10 +18,10 @@ To build the PDF document, you can use the following:
 
 - make file; a simple wrapper for the commands above
     ```sh
-    	$ make 			- builds the PDF file
-    	$ make view 	- opens the file with evince PDF viewer
-    	$ make clean 	- remove files from build/, including the generated PDF
-    	$ make info 	- show metainfo about generated PDF file
+    	$ make       - builds the PDF file
+    	$ make view  - opens the file with evince PDF viewer
+    	$ make clean - remove files from build/, including the generated PDF
+    	$ make info  - show metainfo about generated PDF file
     ```
 
 - install vim plugin vimhook, then the PDF is regenerated on buffer write (save).

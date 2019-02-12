@@ -39,7 +39,8 @@ The generated PDF is in the build/ directory.
     ```
 - chapters/
     ```
-    PDF content and various chapters together with subsections are in this folder. The include directives can be found in the thesis.tex file.
+    PDF content and various chapters together with subsections are in this folder. 
+    The include directives can be found in the thesis.tex file.
     ```
     - 1/
     - 2/
@@ -83,15 +84,18 @@ The generated PDF is in the build/ directory.
     ```
 - references.bib
     ```
-    Add your references to this file. Contains variuos examples how to reference different type of documents.
+    Add your references to this file. Contains variuos examples how to reference 
+    different type of documents.
     ```
 - tex.bufwritepost.vimhook.sh
     ```
-    vimhook file for those whoe prefer vim and have installed the vimhook plugin. This will build the PDF on write by executing make.
+    vimhook file for those whoe prefer vim and have installed the vimhook plugin.
+    This will build the PDF on write by executing make.
     ```
 - thesis.tex
     ```
-    Main file that contains various library imports and configuration paremeters. Edit this file to suit your needs.
+    Main file that contains various library imports and configuration paremeters. 
+    Edit this file to suit your needs.
     ```
 
 ### Development
